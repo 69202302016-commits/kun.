@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio | Juthamanee Prommetta</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Google Fonts: Kanit for Thai Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Load FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Configure Tailwind Earth Tone Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Kanit', 'sans-serif'],
+                    },
+                    colors: {
+                        earth: {
+                            50: '#F9F6F0',  // Background
+                            100: '#F0EBE1', // Light section
+                            200: '#E1D7C6', // Borders
+                            300: '#C8B8A3', // Muted accents
+                            400: '#A39171', // Primary accent
+                            500: '#8A7758', // Hover state
+                            600: '#6B5E52', // Secondary text
+                            700: '#4A3F35', // Primary text
+                            800: '#2E2721', // Dark text
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9F6F0;
+            color: #4A3F35;
+        }
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F9F6F0; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C8B8A3; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A39171; 
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-earth-400 selection:text-white">
+
+    <header class="bg-white shadow-sm pt-20 pb-16 px-4">
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+            <!-- Profile Image -->
+            <div class="relative w-48 h-48 mb-6">
+                <img src="https://raw.githubusercontent.com/69202302016-commits/kun.k/main/kk.png" alt="Profile Picture" class="rounded-full w-full h-full object-cover shadow-lg border-4 border-earth-100 object-top">
+            </div>
+            
+            <!-- Name and Title -->
+            <h1 class="text-3xl md:text-4xl font-bold text-earth-800 mb-2">นางสาวจุฑามณี พรมเมตตา</h1>
+            <p class="text-lg md:text-xl text-earth-600 font-medium mb-1">คณะสาธารณสุขศาสตร์และสหเวชศาสตร์ สาขาสาธารณสุขชุมชน</p>
+            <p class="text-md text-earth-500 mb-6">สถาบันพระบรมราชชนก วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น</p>
+            
+            <!-- Motto -->
+            <div class="inline-block bg-earth-50 rounded-full px-6 py-2 border border-earth-200 mb-8">
+                <p class="italic text-earth-700 font-medium">"ในอุปสรรคมีโอกาสอยู่เสมอ"</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="mailto:69202302016@scphkk.ac.th" class="flex items-center gap-2 bg-white border border-earth-200 text-earth-700 px-4 py-2 rounded-lg shadow-sm hover:border-earth-400 hover:text-earth-500 transition-colors">
+                    <i class="fa-solid fa-envelope"></i> 69202302016@scphkk.ac.th
+                </a>
+                <div class="flex items-center gap-2 bg-white border border-earth-200 text-earth-700 px-4 py-2 rounded-lg shadow-sm">
+                    <i class="fa-brands fa-line text-green-600"></i> / <i class="fa-brands fa-instagram text-pink-600"></i> @beyour_mind
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12 md:py-16 space-y-20">
+
+        <section id="about">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Personal Info -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-earth-100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-earth-100 flex items-center justify-center text-earth-500">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-earth-800">ข้อมูลส่วนตัว</h2>
+                    </div>
+                    <ul class="space-y-4 text-earth-600">
+                        <li class="flex justify-between border-b border-earth-50 pb-2">
+                            <span class="font-medium">วันเกิด:</span> <span>5 มกราคม 2550</span>
+                        </li>
+                        <li class="flex justify-between border-b border-earth-50 pb-2">
+                            <span class="font-medium">อายุ:</span> <span>19 ปี</span>
+                        </li>
+                        <li class="flex justify-between border-b border-earth-50 pb-2">
+                            <span class="font-medium">สัญชาติ / ศาสนา:</span> <span>ไทย / พุทธ</span>
+                        </li>
+                        <li class="pt-2">
+                            <span class="font-medium block mb-1 text-earth-800">ประวัติครอบครัว:</span>
+                            <div class="pl-4 space-y-1 text-sm">
+                                <p>บิดา: นายภูวนาถ พรมเมตตา (อาชีพ: เกษตรกร)</p>
+                                <p>มารดา: นางวงเดือน พรมเมตตา (อาชีพ: เกษตรกร)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skills & Interests -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-earth-100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-earth-100 flex items-center justify-center text-earth-500">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-earth-800">ความสามารถและงานอดิเรก</h2>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-semibold text-earth-700 mb-2">ความสามารถพิเศษ</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-earth-50 text-earth-700 border border-earth-200 px-3 py-1 rounded-md text-sm">การนำเสนองานวิชาการ</span>
+                                <span class="bg-earth-50 text-earth-700 border border-earth-200 px-3 py-1 rounded-md text-sm">แบดมินตัน</span>
+                                <span class="bg-earth-50 text-earth-700 border border-earth-200 px-3 py-1 rounded-md text-sm">วอลเลย์บอล</span>
+                                <span class="bg-earth-50 text-earth-700 border border-earth-200 px-3 py-1 rounded-md text-sm">ร้องเพลง</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold text-earth-700 mb-2">วิชาที่ชอบ</h3>
+                            <div class="flex gap-2 text-earth-600">
+                                <span class="flex items-center gap-1"><i class="fa-solid fa-atom text-earth-400"></i> ฟิสิกส์</span>
+                                <span>และ</span>
+                                <span class="flex items-center gap-1"><i class="fa-solid fa-leaf text-earth-400"></i> ชีววิทยา</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold text-earth-700 mb-2">งานอดิเรก</h3>
+                            <p class="text-earth-600 text-sm leading-relaxed">
+                                อ่านข่าว, ฟังเพลง, ร้องเพลง, อ่านหนังสือ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-earth-800 inline-block relative">
+                    ประวัติการศึกษา
+                    <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-earth-400 rounded-full"></span>
+                </h2>
+            </div>
+            
+            <div class="max-w-3xl mx-auto bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-earth-100 relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-8 md:left-1/2 top-10 bottom-10 w-0.5 bg-earth-200 transform md:-translate-x-1/2"></div>
+                
+                <div class="space-y-12 relative">
+                    <!-- Higher Ed -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between w-full">
+                        <div class="hidden md:block w-5/12 text-right pr-8">
+                            <h3 class="text-lg font-bold text-earth-700">ระดับอุดมศึกษา</h3>
+                        </div>
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-earth-400 border-4 border-white shadow-sm mt-1.5 md:mt-0"></div>
+                        <div class="w-full md:w-5/12 pl-14 md:pl-8">
+                            <h3 class="text-lg font-bold text-earth-700 md:hidden">ระดับอุดมศึกษา</h3>
+                            <p class="text-earth-600">วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น</p>
+                        </div>
+                    </div>
+
+                    <!-- High School -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between w-full">
+                        <div class="hidden md:block w-5/12 text-right pr-8 text-earth-600">
+                            <p>โรงเรียนภูเขียว อำเภอภูเขียว จังหวัดชัยภูมิ</p>
+                        </div>
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-earth-300 border-4 border-white shadow-sm mt-1.5 md:mt-0"></div>
+                        <div class="w-full md:w-5/12 pl-14 md:pl-8">
+                            <h3 class="text-lg font-bold text-earth-700">มัธยมศึกษาปีที่ 4-6</h3>
+                            <p class="text-earth-600 md:hidden">โรงเรียนภูเขียว อำเภอภูเขียว จังหวัดชัยภูมิ</p>
+                        </div>
+                    </div>
+
+                    <!-- Middle School -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between w-full">
+                        <div class="hidden md:block w-5/12 text-right pr-8">
+                            <h3 class="text-lg font-bold text-earth-700">มัธยมศึกษาปีที่ 1-3</h3>
+                        </div>
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-earth-300 border-4 border-white shadow-sm mt-1.5 md:mt-0"></div>
+                        <div class="w-full md:w-5/12 pl-14 md:pl-8">
+                            <h3 class="text-lg font-bold text-earth-700 md:hidden">มัธยมศึกษาปีที่ 1-3</h3>
+                            <p class="text-earth-600">โรงเรียนภูเขียว อำเภอภูเขียว จังหวัดชัยภูมิ</p>
+                        </div>
+                    </div>
+
+                    <!-- Primary School -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between w-full">
+                        <div class="hidden md:block w-5/12 text-right pr-8 text-earth-600">
+                            <p>โรงเรียนบ้านหนองปลา อำเภอภูเขียว จังหวัดชัยภูมิ</p>
+                        </div>
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-earth-300 border-4 border-white shadow-sm mt-1.5 md:mt-0"></div>
+                        <div class="w-full md:w-5/12 pl-14 md:pl-8">
+                            <h3 class="text-lg font-bold text-earth-700">ประถมศึกษาปีที่ 1-6</h3>
+                            <p class="text-earth-600 md:hidden">โรงเรียนบ้านหนองปลา อำเภอภูเขียว จังหวัดชัยภูมิ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-earth-800 inline-block relative">
+                    ผลงานและกิจกรรม
+                    <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-earth-400 rounded-full"></span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-earth-100 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col">
+                    <img src="https://placehold.co/600x400/E1D7C6/4A3F35?text=Art+%26+Craft+Fair" alt="กิจกรรมอ่านทำนองเสนาะ" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="text-sm text-earth-400 font-semibold mb-2">วิชาการ / วัฒนธรรม</div>
+                        <h3 class="text-xl font-bold text-earth-800 mb-3 leading-tight">รางวัลรองชนะเลิศอันดับ 4 กิจกรรมเสนาะสารอ่านทำนองเสนาะ</h3>
+                        <p class="text-earth-600 text-sm leading-relaxed flex-grow">
+                            การแข่งขันงานศิลปะหัตถกรรม ครั้งที่ 72 ที่โรงเรียนชัยภูมิภักดีชุมพล กิจกรรมนี้ช่วยพัฒนาทักษะการอ่านบทร้อยกรองตามฉันทลักษณ์ การใช้น้ำเสียง จังหวะถ่ายทอดอารมณ์ และมีส่วนช่วยสืบทอดวัฒนธรรมการอ่านทำนองเสนาะ
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-earth-100 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col">
+                    <img src="https://placehold.co/600x400/E1D7C6/4A3F35?text=Math+Exam" alt="สอบแข่งขันคณิตศาสตร์" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="text-sm text-earth-400 font-semibold mb-2">5 สิงหาคม 2566</div>
+                        <h3 class="text-xl font-bold text-earth-800 mb-3 leading-tight">การสอบแข่งขันวัดความรู้ความสามารถด้านคณิตศาสตร์</h3>
+                        <p class="text-earth-600 text-sm leading-relaxed flex-grow">
+                            เข้าร่วมการสอบแข่งขันวัดความรู้ระดับชั้นมัธยมศึกษาตอนปลาย ณ โรงเรียนภูเขียว เพื่อประเมินและพัฒนาทักษะกระบวนการคิดทางคณิตศาสตร์
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-earth-100 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col">
+                    <img src="https://placehold.co/600x400/E1D7C6/4A3F35?text=Hospital+Volunteer" alt="จิตอาสาโรงพยาบาล" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="text-sm text-earth-400 font-semibold mb-2">18-22 มีนาคม 2567</div>
+                        <h3 class="text-xl font-bold text-earth-800 mb-3 leading-tight">ฝึกประสบการณ์และจิตอาสา โรงพยาบาลส่งเสริมสุขภาพตำบลแดงสว่าง</h3>
+                        <p class="text-earth-600 text-sm leading-relaxed flex-grow">
+                            ปฏิบัติหน้าที่ช่วยกรอกข้อมูลผู้ป่วย จัดการบัตรคิว เช็คจำนวนยา และช่วยเตรียมฉีดวัคซีนเด็ก ทำให้ได้เรียนรู้ระบบการทำงานของบุคลากรทางการแพทย์ และสังเกตขั้นตอนการดูแลรักษาผู้ป่วยจริง
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-earth-100 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col">
+                    <img src="https://placehold.co/600x400/E1D7C6/4A3F35?text=Singing+Contest" alt="ประกวดร้องเพลง" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="text-sm text-earth-400 font-semibold mb-2">26 มิถุนายน 2567</div>
+                        <h3 class="text-xl font-bold text-earth-800 mb-3 leading-tight">รางวัลรองชนะเลิศอันดับหนึ่ง ประกวดร้องเพลงไทยลูกทุ่ง</h3>
+                        <p class="text-earth-600 text-sm leading-relaxed flex-grow">
+                            กิจกรรมรำลึกสุนทรภู่สู่วันภาษาไทยแห่งชาติ โรงเรียนภูเขียว รับหน้าที่เป็นนักร้องนำ ได้ฝึกความกล้าแสดงออก ความเป็นผู้นำ ความสามัคคี ความคิดสร้างสรรค์ และวินัยในการฝึกซ้อม
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-earth-800 text-earth-200 py-8 text-center mt-10">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-xl font-semibold text-white mb-2">จุฑามณี พรมเมตตา</h2>
+            <p class="text-sm mb-4">แฟ้มสะสมผลงาน (Academic Portfolio)</p>
+            <div class="flex justify-center gap-4 mb-6">
+                <a href="mailto:69202302016@scphkk.ac.th" class="hover:text-white transition-colors" aria-label="Email"><i class="fa-solid fa-envelope text-xl"></i></a>
+                <a href="#" class="hover:text-white transition-colors" aria-label="Line"><i class="fa-brands fa-line text-xl"></i></a>
+                <a href="#" class="hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-xl"></i></a>
+            </div>
+            <p class="text-xs text-earth-400">&copy; 2024 Juthamanee Prommetta. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
